@@ -1,0 +1,145 @@
+@import "./variable";
+.slider {
+    font-family: "@Microsoft YaHei Light";
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+    background-image:$primary-color;
+  }
+  .Reviews{
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 600;
+padding: 0;
+      margin-top: 100px;
+text-align: center;
+  }
+  .carousel-container {
+
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 800px;
+    max-height: 400px;
+
+    position: relative;
+    box-shadow: 0 0 30px -20px #223344;
+    margin: auto;
+    z-index: 0;
+  }
+  
+ 
+  .mySlides {
+    display: none;
+  }
+  .mySlides img {
+    display: block;
+    max-width: 600px;
+    min-width: 280px;
+    max-height: auto;
+    
+  }
+  
+ 
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: auto;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 8px 8px 0;
+    background: rgba(173, 216, 230, 0.1);
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(173, 216, 230, 0.3);
+  }
+  
+
+  .text {
+    color: #f2f2f2;
+    background-color: rgba(10, 10, 20, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    &.sliderheading{
+        font-size: 1rem;
+    }
+    & .customerreview{
+        font-size: .7rem;
+    }
+    &.customername{
+        font-size: .8rem;
+        color: red;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+  }
+  
+  .number {
+    color: #f2f2f2;
+    font-size: 16px;
+    background-color: rgba(173, 216, 230, 0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .dots {
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin: 0 4px;
+    background-color: rgba(173, 216, 230, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  .active,
+  .dots:hover {
+    background-color: rgba(173, 216, 230, 0.8);
+  }
+  
+  .animate {
+    -webkit-animation-name: animate;
+    -webkit-animation-duration: 1s;
+    animation-name: animate;
+    animation-duration: 2s;
+  }
+  
+  @keyframes animate {
+    from {
+      transform: scale(1.1) rotateY(10deg);
+    }
+    to {
+      transform: scale(1) rotateY(0deg);
+    }
+  }

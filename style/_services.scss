@@ -1,0 +1,43 @@
+@import "./variable";
+.services{
+    margin-top: 100px;
+}
+.card{
+    border: 1px solid black;
+   padding: 20px;
+   height: 300px;
+   margin-bottom: 20px;
+   & .card-icon .fa{
+    font-size: 3rem;
+ text-align: center;
+ width: 100%;
+ margin: 20px 0 20px 0;
+ }
+}
+
+.work-name{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+margin: 20px 0  10px 0;
+}
+.work{
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+.portfolio{
+    
+        height: 400px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  
+}
+.portfoliopic {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}

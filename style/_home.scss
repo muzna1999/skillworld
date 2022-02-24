@@ -1,0 +1,77 @@
+@import "./variable";
+
+.home{
+    height: calc(100vh) ;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/background.jpg');;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .heading{
+        letter-spacing: .3rem;
+        font-size: 4rem;
+        margin-bottom: 60px;
+        font-weight: bold;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    & p{
+        color: $hover-color;
+        letter-spacing: .3rem;
+        margin-bottom: 60px;
+    }
+    & .learn-more-btn{
+        border: 2px solid $primary-color;
+        background-color: transparent;
+        color: $primary-color;
+        border-radius: 5px;
+        padding: 10px 30px;
+        text-transform: uppercase;
+    }
+    & .learn-more-btn:hover{
+        -webkit-box-shadow: 0px 0px 15px 3px #FFFFFF; 
+    box-shadow: 0px 0px 15px 3px #FFFFFF;
+    
+    }
+    & .learn-more-btn:active{
+        color: $hover-color;
+    }
+}
+.float{
+	position:fixed;
+	bottom:40px;
+	right:40px;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	z-index:100;
+}
+
+
+@media only screen and (max-width: 600px)  {
+    .home .heading{
+        font-size: 2.5rem;
+    }
+    .home p{
+        margin-bottom: 50px;
+    }
+    .home .learn-more-btn{
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 350px)  {
+    .home .heading{
+        font-size: 1.7rem;
+    }
+    .home p{
+        margin-bottom: 50px;
+        font-size:.8rem ;
+    }
+    .home .learn-more-btn{
+        margin-bottom: 50px;
+    }
+}

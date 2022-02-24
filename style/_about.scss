@@ -1,0 +1,69 @@
+@import "./variable";
+.about{
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcomeheading{
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.sologn{
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: .1rem;
+    text-align: center;
+}
+.about-text{
+    max-width:650px;
+    text-align: center;
+}
+.corner.btn{
+    position: fixed;
+    bottom: 10px; 
+}
+.float{
+	position:fixed;
+	bottom:40px;
+	right:40px;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	z-index:100;
+}
+
+
+
+@media only screen and (max-width: 350px) {
+    .welcomeheading{
+        font-size: 1rem;
+    }
+    .sologn{
+        font-size: .6rem;
+    }
+    .about-text{
+        max-width:300px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .welcomeheading{
+        font-size: 1.2rem;
+    }
+    .sologn{
+        font-size: .5rem;
+    }
+    .about-text{
+        max-width:300px;
+        text-align: center;
+    }
+}

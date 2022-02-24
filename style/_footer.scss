@@ -1,0 +1,59 @@
+@import "./variable";
+.contact{
+    margin-top: 100px;
+    width: 100vw;
+    background-color: $secondary-color;
+    color:$primary-color;
+   padding: 80px 0 80px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.contact-heading{
+    text-align: center;
+    font-size: 2rem;
+    background-color: gray;
+    padding: 10px;
+    letter-spacing: .2rem;
+}
+.container{
+    max-width: 800px;
+}
+.component{
+    margin-top: 50px;
+}
+.contact-header{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.contact-detail{
+    color: $hover-color;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.footer{
+    background-color:$hover-color;
+    width: 100vw;
+    padding: 30px;
+}
+.social-icon{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon svg{
+    width: 25px;
+    height: 25px;
+    margin-left: 40px;
+}
+.social-icon svg:hover{
+    transform: scale(2);
+}
+.copyright-text{
+    color: $secondary-color;
+    text-align: center;
+    font-size: .9rem;
+    margin-top: 30px;
+}

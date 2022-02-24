@@ -1,0 +1,23 @@
+
+@import "./variable";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   overflow-x: hidden;
+   background-color: $primary-color;
+   &.hide-overflow{
+    overflow: hidden;
+   }
+}
+@import "./nv";
+@import "./home";
+@import "./about";
+@import "./services";
+@import "./workpic";
+@import "./slider";
+@import "./pricing";
+@import "./footer";

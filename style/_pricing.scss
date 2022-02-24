@@ -1,0 +1,50 @@
+@import "./variable";
+.pricing{
+    margin-top:100px;
+
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card-prcing{
+    margin-bottom: 30px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.82); 
+box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.82);
+}
+.pricing-icon{
+    height: 50px;
+    background-color: black;
+}
+.pricing-icon2{
+  height: 50px;
+  background-color: blue;
+}
+.pricing-icon3{
+  height: 50px;
+  background-color: red;
+}
+.pricing-text{
+  background-color: $hover-colors;
+  padding: 30px;
+
+}
+.pricing-name{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+.pricing-time{
+  font-size: 1rem;
+  letter-spacing: .1rem;
+}
+.pricing-order{
+  color: red;
+}
+.pricing-order:hover{
+  text-decoration: underline;
+  color: red;
+}

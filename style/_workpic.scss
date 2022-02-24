@@ -1,0 +1,38 @@
+@import "./variable";
+.portfoliopic{
+    display: flex;
+    flex-wrap: wrap;
+gap: 30PX;
+}
+.pwp{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+	cursor: pointer;
+	
+}
+
+.bg-1{
+    background-image: url('../img/workpic.jpg');
+}
+.workpic{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+ 
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.pwp:hover .workpic,
+.pwp:focus .workpic {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
